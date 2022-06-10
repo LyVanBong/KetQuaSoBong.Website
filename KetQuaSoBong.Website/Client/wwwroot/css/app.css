@@ -1,5 +1,21 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
+:root {
+    box-sizing: inherit;
+    --primaryColor: #B02019;
+    --subColor: #FF0000;
+}
+@font-face {
+    font-family: 'RB';
+    src: url('../res/fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RBL';
+    src: url('../res/fonts/Roboto-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RT';
+    src: url('../res/fonts/Roboto-Regular.ttf') format('truetype');
+}
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -9,13 +25,14 @@ h1:focus {
 }
 
 a, .btn-link {
-    color: #0071c1;
+    color: var(--subColor);
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: var(--primaryColor);
+    border-color: none;
+    outline: none;
 }
 
 .content {
@@ -33,7 +50,14 @@ a, .btn-link {
 .validation-message {
     color: red;
 }
-
+.banner-style {
+    margin: -1px 0 0 0;
+    background: url('../res/images/img_banner.svg') center/cover;
+  
+}
+.layer-style {
+    background: url('../res/images/layer.png') center/cover;
+}
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
