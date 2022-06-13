@@ -1,14 +1,23 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../wwwroot/res/fonts/Roboto-Bold.ttf') format("truetype"); /* Make sure your file location is right */
+}
+:root {
+    
+}
 .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+   background-color: none;
 }
 
 .top-row {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #B02019;
 }
 
 .navbar-brand {
+    
     font-size: 1.1rem;
+    font-family: RB;
 }
 
 .oi {
@@ -16,6 +25,12 @@
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+}
+.icon-menu {
+    width: 28px;
+    height: 28px;
+    border-radius: 2px;
+    margin: 0 0 0 -5px;
 }
 
 .nav-item {
@@ -32,25 +47,27 @@
     }
 
     .nav-item ::deep a {
-        color: #d7d7d7;
+        color: #000;
+        font-family: RB;
         border-radius: 4px;
         height: 3rem;
         display: flex;
         align-items: center;
         line-height: 3rem;
+        flex: 1 1 auto;
     }
 
 .nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
+    background-color: #B02019;
     color: white;
 }
-
-.nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+.user-info {
+    width: 100%;
+    height: 35vh;
 }
 
 @media (min-width: 641px) {
+
     .navbar-toggler {
         display: none;
     }
@@ -59,4 +76,5 @@
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+
 }

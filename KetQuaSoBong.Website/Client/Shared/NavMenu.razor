@@ -1,27 +1,48 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">KetQuaSoBong.Website</a>
+        <a class="navbar-brand" href="">Kết quả số bóng</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="color:azure"></span>
         </button>
     </div>
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                <span class="oi" aria-hidden="true"><img src="/res//images/bac.png"  class="icon-menu"/></span>  Xổ số miền Bắc
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+                  <span class="oi" aria-hidden="true"><img src="/res//images/trung.png"  class="icon-menu"/></span> Xổ số miền Trung
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+                  <span class="oi" aria-hidden="true"><img src="/res//images/nam.png"  class="icon-menu"/></span> Xổ số miền Nam
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="£">
+                  <span class="oi" aria-hidden="true"><img src="/res//images/bongda.png"  class="icon-menu"/></span> Bóng đá
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="&">
+                  <span class="oi" aria-hidden="true"><img src="/res//images/ic_vote.png"  class="icon-menu"/></span> Dự đoán
+            </NavLink>
+        </div>
+         <div class="nav-item px-3">
+            <NavLink class="nav-link" href="$">
+                  <span class="oi" aria-hidden="true"><img src="/res//images/group_chat.png"  class="icon-menu"/></span> Group
+            </NavLink>
+        </div>
+         <div class="nav-item px-3">
+            <NavLink class="nav-link" href="(">
+                  <span class="oi" aria-hidden="true"><img src="/res//images/ho_tro.png"  class="icon-menu"/></span> Hỗ trợ
             </NavLink>
         </div>
     </nav>

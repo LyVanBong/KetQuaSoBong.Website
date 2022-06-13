@@ -1,9 +1,18 @@
 ﻿@page "/"
+@using System.Globalization
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Trang chủ</PageTitle>
+<div class="page-content">
+    <div class="banner-style">
+    <h2 class="banner-title">
+        XỔ SỐ KIẾN THIẾT <br/> <code class="banner-subtitle"> @_dateTimeNow </code>
+    </h2>
+</div>
+<div class="lottery-container">
+     <KetQuaSoBong.Website.Client.Components.Lottery.NothernLotteryComponent/>
+     <KetQuaSoBong.Website.Client.Components.Lottery.SouthOrCentralLotteryComponent/>
+     <KetQuaSoBong.Website.Client.Components.Lottery.NothernLotteryComponent/>
+</div>
+</div>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
