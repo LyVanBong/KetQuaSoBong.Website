@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.ResponseCompression;
-
-namespace Company.WebApplication1
+namespace KetQuaSoBong.Website.Server
 {
     public class Program
     {
@@ -12,6 +10,7 @@ namespace Company.WebApplication1
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
@@ -19,9 +18,13 @@ namespace Company.WebApplication1
             if (app.Environment.IsDevelopment())
             {
                 app.UseWebAssemblyDebugging();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
             else
             {
+                app.UseSwagger();
+                app.UseSwaggerUI();
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
