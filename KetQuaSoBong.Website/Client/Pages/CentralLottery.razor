@@ -1,9 +1,35 @@
-﻿  <div class="card lottery-item">
+﻿@page "/centralLottery"
+
+<h1 class="page_title">KẾT QUẢ XỐ SỐ MIỀN TRUNG </h1>
+ <div class="container_choose_date">
+   
+     <div style="margin: 10px; display: inline-block;">
+         <label class="choose_date_title">Ngày quay thưởng: </label>
+         <SfDatePicker TValue="DateTime?" Value='@DateValue' Min='@MinDate' Max='@MaxDate'
+                       ShowClearButton="true"
+                       style="padding-bottom: 6px; display: inline-block; font-family:RT;"
+                       Locale="vi"
+                       Format='dd/MM/yyyy'>
+         </SfDatePicker>
+         
+     </div>
+     <input type="button" class="btn-show-result" value="Xem kết quả"/>
+       
+ </div>
+ <span class="span-loading" style="margin-left: 5px">
+     <img class="ic_loading" src="/res/images/loading.gif"/>
+     <label class="choose_date_title">Đang tải...</label>
+ </span>
+
         <div class="lottery-item-title">
-            <h5 class="lottery-item-title__content"><b style="color:#B02019;">XSMB  </b>@_dateTimeNow</h5>
+            <h5 class="lottery-item-title__content"><b style="color:#B02019;">XSMB </b>@_dateTimeNow</h5>
         </div>
+         <h6 class="lottery-item-result__nothern__symbol">Ký hiệu: <i>11YN-23N2-13K-123I-8YN</i></h6>
+     <div class="container_lottery">
+
+       
         <div class="lottery-item-result__nothern">
-            <h6 class="lottery-item-result__nothern__symbol">Ký hiệu: <i>11YN-23N2-13K-123I-8YN</i></h6>
+           
             <div class="lottery-item-result__nothern__table">
                 <div class="table-left">
                     <div class="row-index" style="--height:40px; --bg:#F0F0F0;">ĐB</div>
@@ -100,16 +126,72 @@
                     </div>
                 </div>
             </div>
-            <div class="lottery-item-result__nothern-container__hide" id="showMoreView2">
-                 <div class="lottery-item-result__nothern__changeview">
+            <div class="lottery-item-result__nothern__changeview">
                    <span class="rd_changetypeview"><input type="radio" name="rdChangeType" /><label class="rd-title">  Đầy đủ</label></span> 
                    <span class="rd_changetypeview"><input type="radio" name="rdChangeType" /><label class="rd-title"> 2 số</label></span> 
                    <span class="rd_changetypeview"><input type="radio" name="rdChangeType" /><label class="rd-title">  3 số</label></span> 
                    <span class="rd_changetypeview"><input type="checkbox" /><label class="rd-title">  Thông báo</label></span>
-                 </div>
-                 <div class="lottery-item-result__nothern__table lottery-item-result__nothern__table-loto">
+             </div>
+           </div>
 
+            
+                 <div class="lottery-item-result__nothern__table-loto">
+                     <div class="container__header-loto">
+                         <label class="title__header-loto"> Lô tô Miền Bắc</label>
+                     </div>
+                     <div>
+                        <table class="loto__table">
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                            <tr class="loto__row">
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                                <td class="loto__col">79</td>
+                            </tr>
+                        </table>
+                     </div>
                  </div>
+
+            <div class="lottery-item-result__nothern-container__hide" id="showMoreView2">
+                
                  <div class="lottery-item-result__nothern-firstlast-table lottery-item-result__nothern__table">
                      <div class="table-left">
                          <div class="row-index" style="--height:40px; --bg:#F0F0F0;">Đầu</div>
@@ -167,9 +249,4 @@
             </div>
           
         </div>
-        <div class="btn-showmore">
-              <span><label class="btn-showmore-content">Mở rộng</label><img class="btn-showmore-icon" src="/res/images/ic_down.png" /></span>
-        </div>
         
-</div>
-

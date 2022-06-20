@@ -4,7 +4,7 @@ namespace KetQuaSoBong.Website.Client.Components.Lottery
 {
     public partial class SouthOrCentralLotteryComponent
     {
-        private string _dateTimeNow = "";
+        public string _dateTimeNow = "";
         protected override async Task OnInitializedAsync()
         {
             DateTime now = DateTime.Now;

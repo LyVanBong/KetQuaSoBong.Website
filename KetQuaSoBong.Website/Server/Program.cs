@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.ResponseCompression;
+using Syncfusion.Blazor;
 namespace KetQuaSoBong.Website.Server
 {
     public class Program
@@ -10,8 +12,9 @@ namespace KetQuaSoBong.Website.Server
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+            builder.Services.AddSyncfusionBlazor(options => { options.IgnoreScriptIsolation = true; });
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjU3MTc3QDMyMzAyZTMxMmUzMGtuUGx4TE5kVHlFVTV2L05aM2h0b3ZSVnVTOWViUmpPSFdPOUROTEVBSlk9");
             builder.Services.AddSwaggerGen();
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

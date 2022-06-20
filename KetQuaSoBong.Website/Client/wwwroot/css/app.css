@@ -58,6 +58,9 @@ a, .btn-link {
 .layer-style {
     background: url('../res/images/layer.png') center/cover;
 }
+.banner_football {
+    background: url('../res/images/banner_football.jpg') center/cover;
+}
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;

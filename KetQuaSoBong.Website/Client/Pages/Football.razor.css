@@ -1,0 +1,132 @@
+﻿:root {
+    --yellow: #ffdd82;
+    margin: 0;
+}
+
+.page-content {
+    position: relative;
+    height: 4000px;
+}
+
+.banner_football {
+    margin: -1px 0 0 0;
+    height: 35vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: end;
+    z-index: 1;
+}
+
+.banner-title {
+    color: white;
+    margin: 30px 20px;
+    font-weight: bold;
+    font-family: RB
+}
+
+.banner-subtitle {
+    color: white;
+    font-weight: 100;
+    font-size: 0.5em;
+    font-family: RT;
+}
+.frame_football {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    z-index: 0;
+}
+.hide_menu {
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -230px;
+    box-shadow: none;
+    display: none;
+}
+@media (max-width: 640.98px)  {
+    .frame_football {
+        top: 190px;
+    }
+    .hide_menu {
+        display: block;
+    }
+    .banner_football {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 822px) {
+    .frame_football {
+        top: 90px;
+        
+    }
+    .page-content {
+        max-height: 2510px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 799px) {
+    .frame_football {
+        top: 90px;
+    }
+
+    .page-content {
+        position: relative;
+        height: 1610px;
+    }
+}
+@media (max-width: 540.98px) and (max-width: 640px) {
+    .frame_football {
+        top: 230px;
+    }
+
+    .hide_menu {
+        display: block;
+    }
+}
+@media (min-width: 375px) and (max-width: 390px) {
+    .frame_football {
+        top: 180px;
+    }
+
+    .hide_menu {
+        display: block;
+        bottom: -180px;
+    }
+}
+@media (min-width: 359px) and (max-width: 374px) {
+    .frame_football {
+        top: 210px;
+    }
+
+    .hide_menu {
+        display: block;
+        bottom: -210px;
+    }
+}
+@media (min-width: 390px) and (max-width: 659px) {
+    .frame_football {
+        top: 280px;
+    }
+
+    .hide_menu {
+        display: block;
+        bottom: -280px;
+    }
+}
+@media (min-width: 640px) and (max-width: 800px) {
+    .frame_football {
+        top: 390px;
+    }
+}
+@media (min-width: 800px) and (max-width: 820px) {
+    .frame_football {
+        top: 330px;
+    }
+}

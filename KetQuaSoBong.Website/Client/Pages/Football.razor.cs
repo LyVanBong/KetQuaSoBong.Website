@@ -2,7 +2,7 @@
 
 namespace KetQuaSoBong.Website.Client.Pages
 {
-    public partial class Index
+    public partial class Football
     {
         private string _dateTimeNow = "";
         protected override async Task OnInitializedAsync()

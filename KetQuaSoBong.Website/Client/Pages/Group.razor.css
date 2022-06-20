@@ -1,0 +1,19 @@
+﻿.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 60px);
+}
+
+.container__sidebar {
+    width: 30%;
+}
+
+.container__main {
+    min-width:  300px;
+    /* Take the remaining width */
+    flex: 1;
+    /* Make it scrollable */
+    overflow: auto;
+/**/
+    background-color: white;
+}

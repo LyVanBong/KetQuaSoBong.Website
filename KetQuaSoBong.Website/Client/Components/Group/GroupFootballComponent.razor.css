@@ -1,0 +1,138 @@
+﻿html, body {
+    height: 100%;
+}
+
+.group_chat_container {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+.title-group {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.title-group h3 {
+    color: white;
+    font-family: RT;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.ic_more {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.container_chat {
+    background-color: white;
+    flex-grow: 1;
+}
+.container_send {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.input_message {
+    outline: none;
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    min-height: 30px;
+    min-width: 200px;
+    padding: 0 15px;
+}
+.input_more {
+    display: flex;
+    margin-left: 5px;
+}
+.btn-like {
+    display: flex;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    margin: 0 5px;
+}
+.container_chat {
+    overflow-y: auto;
+    height: 100%;
+}
+.your_chat {
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.your_chat_item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.your_chat_avt {
+    width:40px; 
+    height: 40px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.your_chat_container {
+    align-items: flex-start;
+}
+.your_chat_name {
+    text-decoration: none;
+    font-family: RB;
+    color: #B02019;
+    margin: 0 5px;
+}
+.your_chat--chat_content {
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.your_chat--content_chat {
+    margin : 0 5px;
+}
+.your_chat--chat_time {
+    float: right;
+    color: #000;
+    font-size: 0.65rem;
+    font-style: italic;
+    font-family: RT;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+.my_chat {
+    display: block;
+    float: right;
+    width: 100%;
+}
+.my_chat_item {
+    float: right;
+    margin: 20px;
+}
+.my_chat_item {
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.my_chat--chat_content {
+    background-color: #B02019;
+    padding: 10px;
+    border-radius: 15px;
+}
+.my_chat--content_chat {
+    margin: 0 5px;
+    color: white;
+}
+.my_chat--chat_time {
+    float: right;
+    color: #000;
+    font-size: 0.65rem;
+    font-style: italic;
+    font-family: RT;
+    margin-top: 5px;
+}

@@ -1,0 +1,134 @@
+﻿.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-family: RB;
+    text-align: center;
+    color: #B02019;
+    padding: 10px;
+}
+
+.container_ball {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.ball_item {
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    background-color: #B02019;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: RB;
+    align-items: center;
+    color: #ffd800;
+}
+
+h5 {
+    font-family: RB;
+    text-align: center;
+    padding: 10px;
+}
+
+.list_number {
+    color: #B02019;
+}
+
+.btn_show_result {
+    background-color: #B02019;
+    color: white;
+    margin: auto;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.span_loading {
+    margin: auto;
+}
+
+.ic_loading {
+    width: 40px;
+    height: 40px;
+}
+
+.choose_date_title {
+    font-size: 1rem;
+    font-family: RB;
+    color: #B02109;
+}
+
+.result_item {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px 20px;
+}
+
+.number_voted {
+    font-family: RB;
+}
+
+.btn_con {
+    font-family: RT;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #B02019;
+    text-decoration: underline;
+    margin: 10px auto;
+}
+
+@media only screen (max-width: 1024px) and (min-width: 640.8px) {
+    .container_ball {
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 640.98px) {
+    h4 {
+        font-size: 1rem;
+    }
+
+    .ball_item {
+        min-width: 30px;
+        min-height: 30px;
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .btn_con {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 641px) {
+    .container_ball {
+        max-width: 1100px;
+        margin: 10px 120px 0 120px;
+    }
+
+    .result_item {
+        max-width: 1100px;
+        margin: 10px 120px 0 120px;
+    }
+}
