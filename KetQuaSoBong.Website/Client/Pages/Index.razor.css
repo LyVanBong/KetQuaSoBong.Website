@@ -1,8 +1,11 @@
 ﻿:root {
     --yellow: #ffdd82;
+    margin: 0;
+    
 }
 .page-content {
     position: relative;
+    
 }
 .banner-style {
     height:35vh;
@@ -33,5 +36,6 @@
     top: 32vh;
     left:0;
     right:0;
+    background-color: transparent;
    
 }

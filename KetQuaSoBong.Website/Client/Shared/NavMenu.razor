@@ -12,36 +12,75 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi" aria-hidden="true"><img src="/res//images/bac.png"  class="icon-menu"/></span>  Xổ số miền Bắc
+                <span class="oi" aria-hidden="true"><img src="/res//images/trangchu.png"  class="icon-menu"/></span>  Trang chủ
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
+            <NavLink class="nav-link" href="nothernLottery">
+                  <span class="oi" aria-hidden="true"><img src="/res//images/bac.png"  class="icon-menu"/></span> Xổ số miền Bắc
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="centralLottery">
                   <span class="oi" aria-hidden="true"><img src="/res//images/trung.png"  class="icon-menu"/></span> Xổ số miền Trung
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
+            <NavLink class="nav-link" href="southLottery">
                   <span class="oi" aria-hidden="true"><img src="/res//images/nam.png"  class="icon-menu"/></span> Xổ số miền Nam
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="£">
+            <NavLink class="nav-link" href="football">
                   <span class="oi" aria-hidden="true"><img src="/res//images/bongda.png"  class="icon-menu"/></span> Bóng đá
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="&">
+            <NavLink class="nav-link"  @onclick="()=>expandSubNav2 = !expandSubNav2">
                   <span class="oi" aria-hidden="true"><img src="/res//images/ic_vote.png"  class="icon-menu"/></span> Dự đoán
             </NavLink>
+             @if (expandSubNav2)
+        {   
+            <div class="nav-item px-3">
+                <NavLink class="" href="nothernVoted" style="text-decoration: none">
+                   <span class="oi" aria-hidden="true"></span> Kết quả XSMB
+                </NavLink>
+            </div>
+             <div class="nav-item px-3">
+                <NavLink class="" href="centralVoted" style="text-decoration: none">
+                   <span class="oi" aria-hidden="true"></span> Kết quả XSMT
+                </NavLink>
+            </div>
+             <div class="nav-item px-3">
+                <NavLink class="" href="southVoted" style="text-decoration: none">
+                   <span class="oi" aria-hidden="true"></span> Kết quả XSMN
+                </NavLink>
+            </div>
+        
+        }
         </div>
          <div class="nav-item px-3">
-            <NavLink class="nav-link" href="$">
+            <NavLink class="nav-link" @onclick="()=>expandSubNav = !expandSubNav">
                   <span class="oi" aria-hidden="true"><img src="/res//images/group_chat.png"  class="icon-menu"/></span> Group
             </NavLink>
-        </div>
+       
+        @if (expandSubNav)
+        {   
+            <div class="nav-item px-3">
+                <NavLink class="expand-menu" href="groupLottery" style="text-decoration: none">
+                     <span class="oi" aria-hidden="true"></span> Cộng đồng Xổ số
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="" href="groupFootball" style="text-decoration: none">
+                   <span class="oi" aria-hidden="true"></span> Cộng đồng Bóng đá
+                </NavLink>
+            </div>
+        
+        }
+         </div>
          <div class="nav-item px-3">
-            <NavLink class="nav-link" href="(">
+            <NavLink class="nav-link" href="support">
                   <span class="oi" aria-hidden="true"><img src="/res//images/ho_tro.png"  class="icon-menu"/></span> Hỗ trợ
             </NavLink>
         </div>
@@ -52,6 +91,9 @@
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private bool expandSubNav;
+    private bool expandSubNav2;
+
 
     private void ToggleNavMenu()
     {

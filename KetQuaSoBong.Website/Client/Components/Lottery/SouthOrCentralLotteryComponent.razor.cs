@@ -8,7 +8,7 @@ namespace KetQuaSoBong.Website.Client.Components.Lottery
         protected override async Task OnInitializedAsync()
         {
             DateTime now = DateTime.Now;
-            _dateTimeNow = DateTimeHelper.StandardWeekDays(now.DayOfWeek.ToString()) + ", NGÀY " + DateTimeHelper.StandardDayMonths(now.Day) + " THÁNG " + DateTimeHelper.StandardDayMonths(now.Month);
+            _dateTimeNow = DateTimeHelper.StandardDayMonths(now.Day) + "/" + DateTimeHelper.StandardDayMonths(now.Month) + "/" + now.Year;
         }
     }
 }
