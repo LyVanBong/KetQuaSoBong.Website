@@ -5,9 +5,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Syncfusion.Blazor" Version="20.1.0.60" />
+	</ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Syncfusion.Blazor" Version="20.1.0.60" />
+    <PackageReference Include="MongoDB.Driver" Version="2.16.0" />
   </ItemGroup>
 
   <ItemGroup>
