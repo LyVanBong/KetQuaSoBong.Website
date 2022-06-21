@@ -1,10 +1,9 @@
-using KetQuaSoBong.Website.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Syncfusion.Blazor;
 
-namespace Company.WebApplication1
+namespace KetQuaSoBong.Website.Client
 {
     public class Program
     {
@@ -14,6 +13,7 @@ namespace Company.WebApplication1
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
             builder.Services.AddSyncfusionBlazor(options => { options.IgnoreScriptIsolation = true; });
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjU5NzI1QDMyMzAyZTMxMmUzMFAvL0tNY1I3cE1RNnJBK2kxMDZlUkNqZGxsNXVjQTlSTDRQajJZWFFLUWc9");
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.Configure<RequestLocalizationOptions>(options =>
             {
