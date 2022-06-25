@@ -1,4 +1,5 @@
-﻿@inherits LayoutComponentBase
+﻿@using Syncfusion.Blazor.Popups
+@inherits LayoutComponentBase
 
 <div class="page">
     <div class="sidebar col-sm-3 col-md-2">
@@ -7,7 +8,17 @@
 
     <main >
         <div class="top-row">
-
+            <div class="px-3 account_in_nav">
+                <img class="avt_nav" src="/res/images/logo-slash.png"/>
+                <div class="if_nav">
+                    <h5> Tài khoản người dùng</h5>
+                    <div class="log_sign_tt">
+                         <h6 @onclick="@(e => OnZoomBtnSignInClick(DialogEffect.Zoom))"> Đăng ký</h6>
+                         <h6 @onclick="@(e => OnZoomBtnClick(DialogEffect.Zoom))"> Đăng nhập</h6>
+                    </div>
+                   
+                </div>
+            </div>
         </div>
 
         <article style="background-color: #EEEEEE">
@@ -15,5 +26,58 @@
         </article>
        
     </main>
+    <SfDialog AllowDragging="true" @bind-Visible="@dialogVisible" IsModal="true" Width="285px" ShowCloseIcon="true" Target="#target">
+        <DialogTemplates>
+            <Header>
+              <span style="color: #B02019; font-family: RB">Đăng nhập</span>
+            </Header>
+            <Content>
+
+                <p class="tt_input">Tên đăng nhập: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập tên đăng nhập..."/> 
+                
+                <p class="tt_input">Mật khẩu: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập mật khẩu..."/> 
+
+                <a style="color: #FF0000; margin: 5px 2px; float: right; text-decoration: underline">Quên mật khẩu?</a>
+
+                <button class="btn_login_form">Đăng nhập</button>
+
+                 <p style="text-align: center; margin: 10px 0 0 0;">Chưa có tài khoản? Vui lòng <a style="color: #FF0000; margin: 0 auto; text-decoration: underline; cursor: pointer" @onclick="@(e => OnZoomBtnSignInClick(DialogEffect.Zoom))"> Đăng ký</a></p>
+            </Content>
+        </DialogTemplates>
+        
+        <DialogAnimationSettings Effect="@animationEffect"></DialogAnimationSettings>
+    </SfDialog>
+
+     <SfDialog AllowDragging="true" @bind-Visible="@dialogSigninVisible" IsModal="true" Width="285px" ShowCloseIcon="true" Target="#target">
+        <DialogTemplates>
+            <Header>
+              <span style="color: #B02019; font-family: RB">Đăng ký tài khoản</span>
+            </Header>
+            <Content>
+                <p class="tt_input">Tên người dùng: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập tên người dùng..."/> 
+
+                <p class="tt_input">Tên đăng nhập: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập tên đăng nhập..."/> 
+                
+                <p class="tt_input">Mật khẩu: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập mật khẩu..."/> 
+
+                <p class="tt_input">Email: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập email..."/> 
+
+                <p class="tt_input">Số điện thoại: <span style="color: #FF0000;">*</span></p>
+                <input class="form_input" type="text" placeholder="Nhập số điện thoại..."/> 
+
+                <button class="btn_login_form">Đăng ký</button>
+
+                 <p style="text-align: center; margin: 15px 0 0 0;">Đã có tài khoản? <a style="color: #FF0000; margin: 0 auto; text-decoration: underline; cursor: pointer" @onclick="@(e => OnZoomBtnClick(DialogEffect.Zoom))"> Đăng nhập ngay</a></p>
+            </Content>
+        </DialogTemplates>
+        
+        <DialogAnimationSettings Effect="@animationEffect"></DialogAnimationSettings>
+    </SfDialog>
      
 </div>
