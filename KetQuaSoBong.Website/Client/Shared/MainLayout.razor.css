@@ -12,7 +12,62 @@ main {
     
 }
 
+.account_in_nav {
+    display: flex;
+}
 
+.avt_nav {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+}
+
+.if_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 10px;
+}
+
+h5 {
+    font-family: RT;
+    font-size: 0.85rem;
+    color: white;
+    margin: 0;
+}
+.log_sign_tt {
+    display: flex;
+    align-self: end;
+}
+h6 {
+    color: #B02019;
+    font-size: 0.65rem;
+    color: white;
+    margin: 8px 0 8px 8px;
+    text-decoration: underline;
+}
+
+.tt_input {
+    font-family: RB;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.form_input {
+    min-height: 35px;
+    width: 100%;
+}
+.btn_login_form {
+    min-height: 40px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    background-color: #B02019;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
 .sidebar {
     background-color: #FFF;
     border: none;

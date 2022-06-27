@@ -8,7 +8,17 @@
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-
+    @*<div class="px-3 account_in_nav">
+        <img class="avt_nav" src="/res/images/logo-slash.png"/>
+        <div class="if_nav">
+            <h5> Tài khoản người dùng</h5>
+            <div class="log_sign_tt">
+                    <h6 @onclick="@(e => OnZoomBtnSignInClick(DialogEffect.Zoom))"> Đăng ký</h6>
+                    <h6 @onclick="@(e => OnZoomBtnClick(DialogEffect.Zoom))"> Đăng nhập</h6>
+            </div>
+                   
+        </div>
+    </div>*@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -36,7 +46,7 @@
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link"  @onclick="()=>expandSubNav2 = !expandSubNav2">
+            <NavLink class="nav-link"  @onclick="()=> { expandSubNav2 = !expandSubNav2; expandSubNav = false; }">
                   <span class="oi" aria-hidden="true"><img src="/res//images/ic_vote.png"  class="icon-menu"/></span> Dự đoán
             </NavLink>
              @if (expandSubNav2)
@@ -60,7 +70,7 @@
         }
         </div>
          <div class="nav-item px-3">
-            <NavLink class="nav-link" @onclick="()=>expandSubNav = !expandSubNav">
+            <NavLink class="nav-link" @onclick="()=> { expandSubNav = !expandSubNav; expandSubNav2 = false; }">
                   <span class="oi" aria-hidden="true"><img src="/res//images/group_chat.png"  class="icon-menu"/></span> Group
             </NavLink>
        
