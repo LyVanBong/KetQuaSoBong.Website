@@ -1,27 +1,20 @@
-# KetQuaSoBong.Website
+# KetQuaSoBong.Website 🌐
+> Cổng thông tin tra cứu Kết quả Xổ số & Bóng đá trực tuyến (Blazor WebAssembly).
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/LyVanBong/KetQuaSoBong.Website)
-![GitHub issues](https://img.shields.io/github/issues/LyVanBong/KetQuaSoBong.Website)
-![GitHub stars](https://img.shields.io/github/stars/LyVanBong/KetQuaSoBong.Website)
 
 ## 📝 Giới Thiệu
-Ket Qua So Bong Website
+**KetQuaSoBong.Website** là ứng dụng web hiện đại (SPA) được xây dựng bằng **Blazor WebAssembly**, mang lại trải nghiệm người dùng nhanh chóng và mượt mà như ứng dụng native.
 
-Đây là một trong những dự án mã nguồn mở được phát triển và duy trì bởi **LyVanBong**. Mã nguồn được chia sẻ với mục đích học tập và đóng góp cho cộng đồng.
+## ✨ Tính Năng
+-   **Tra cứu Xổ số**: Xem kết quả XSMB, XSMT, XSMN nhanh chóng.
+-   **Livescore Bóng đá**: Xem tỷ số trực tuyến, lịch thi đấu.
+-   **Thống kê/Soi cầu**: Phân tích tần suất loto (đang phát triển).
 
-## 🚀 Tính Năng
-- [x] Đang cập nhật...
-- [ ] Tính năng nổi bật sẽ được liệt kê tại đây.
-
-## 🛠 Cài Đặt
-Hướng dẫn cài đặt và sử dụng sẽ sớm được cập nhật.
-
-```bash
-# Clone dự án
-git clone https://github.com/LyVanBong/KetQuaSoBong.Website.git
-```
+## 🛠 Công Nghệ
+-   **Framework**: Blazor WebAssembly (.NET).
+-   **UI Components**: Razor Components.
+-   **State Management**: C# (Client-side).
 
 ## 📞 Liên Hệ
-Nếu bạn có câu hỏi hoặc muốn đóng góp, vui lòng liên hệ:
-- **GitHub**: [LyVanBong](https://github.com/LyVanBong)
-- **Website**: [softty.net](https://softty.net)
+-   **GitHub**: [LyVanBong](https://github.com/LyVanBong)
